@@ -89,7 +89,7 @@ header{
     padding-left: 6rem;
 }
 
-.contenidoAbout, .contenidoContact{
+.contenidoAbout, .contenidoContact, .contenidoRules{
     width: 80.3vw;
     margin-left: 18vw;
     margin-top: 8rem;
@@ -107,8 +107,13 @@ header{
     margin-left: 18vw;
 }
 
+/* .contenidoRules ol li{
+    list-style: circle;
+} */
+
+
 /* CONFIGURO SLIDER IMAGENES */
-ul, li{
+.slidermenu > li{
     margin: 0;
     padding: 0;
     list-style: none;
