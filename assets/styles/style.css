@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* main{
+    height: 100vh;
+} */
+header{
+    width: 100%;
+    height: 50vh;
+
+    position: relative;
+}
+.containerHeader{
+    height: 100%;
+}
+.banner img{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.containerLogo img{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    margin-top: 20vh;
+    margin-left: 70%;
+}
+
+.containerText .title{
+    position: relative;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.menu{
+    width: 15vw;
+    position: relative;
+    margin-top: 4rem;
+    height: 85vh;
+}
+
+.menu ul{
+    padding: 2rem 1rem;
+}
+.menu ul li{
+    padding: 2rem 1rem;
+    text-align: center;    
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: block;
+    width: 170px;
+}
+
+.menu ul li a::after{
+    background-color: blueviolet;
+}
+.menu ul li a:hover{
+    transform: scale(1.2);
+}
+.subtitle{
+    background-color: black;
+    color: white;
+    height: 4rem;
+    padding: 10px;
+}
+.subtitle h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.events{
+    width: 80.3vw;
+    margin-left: 18vw;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 6rem;
+}
+
+.contenidoAbout, .contenidoContact{
+    width: 80.3vw;
+    margin-left: 18vw;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding-left: 6rem;
+}
+
+.detailEvent, .detailInfo, .contenidoContact>p{
+    margin: 2.5rem 0;
+}
+.image{
+    text-align: center;
+    padding: 1rem;
+    width: 80.3vw;
+    margin-left: 18vw;
+}
+
+/* CONFIGURO SLIDER IMAGENES */
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.slider{
+    position: relative;
+    height: 420px;
+    width: auto;
+}
+
+ul.slider li{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: inherit;
+    transition: opacity .5s;
+
+}
+.slider img{
+    width: 100%;
+    height: 420px;
+    background-color: white;
+    object-fit: contain;
+}
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+.slidermenu{
+    text-align: center;
+    margin: 10px;
+}
+.slidermenu li{
+    display: inline-block;
+    text-align: center;
+}
+.slidermenu li a{
+    display: inline-block;
+    background-color: grey;
+    color: grey;
+    opacity: 0.7;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+/* FIN DEL SLIDER IMAGENES */

@@ -5,41 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/Logo_Mighty_ducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>MDHL WebSite</title>
 </head>
 <body>
     <!-- ENCABEZADO -->
     <header>
         <div class="containerHeader">
-            <!-- LOGO -->
-            <figure class="containerLogo">
-                <img src="./assets/Logo_Mighty_ducks-01.png" alt="Logo MDHL" height="200" width="200">
+            <!-- BANNER -->
+            <figure class="banner">
+                <img src="./assets/images/design1_image1.jpg" alt="">
             </figure>
+            
             <!-- TEXTO -->
             <div class="containerText">
                 <!-- TITULO -->
                 <div class="title">
                     <h1>Mighty Ducks Hockey League</h1>
                 </div>
-                <!-- MENU -->
-                <nav class="menu">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About MDHL</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
+
+            <!-- LOGO -->
+            <figure class="containerLogo">
+                <img src="./assets/images/Logo_Mighty_ducks-01.png" alt="Logo MDHL" height="200" width="200">
+            </figure>
         </div>
+
+        <!-- MENU -->
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About MDHL</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
     </header>
+    
 
     <!-- CONTENIDO -->
     <main>
         <div class="containerMainIndex">
-            <figure class="image">
-                <img src="./assets/hockey_1.jpg" alt="">
-            </figure>
-
             <section class="contenido">
                 <div class="subtitle">
                     <h2>Upcoming Events</h2>
@@ -60,6 +65,18 @@
                     </article>
                 </div>
             </section>
+            <figure class="image">
+                <ul class="slider">
+                    <li id="slide1"><img  src="./assets/images/hockey_1.jpg" alt=""></li>
+                    <li id="slide2"><img  src="./assets/images/hockey_2.jpg" alt=""></li>
+                    <li id="slide3"><img  src="./assets/images/hockey_3.jpg" alt=""></li>
+                </ul>
+                <ul class="slidermenu">
+                    <li><a href="#slide1">.</a> </li>
+                    <li><a href="#slide2">.</a> </li>
+                    <li><a href="#slide3">.</a> </li>
+                </ul>
+            </figure>
         </div>
     </main>
 
