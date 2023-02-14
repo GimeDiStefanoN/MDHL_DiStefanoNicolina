@@ -50,7 +50,8 @@ header{
 }
 .menu ul li{
     padding: 2rem 1rem;
-    text-align: center;    
+    text-align: center;
+    list-style: none;    
 }
 .menu ul li a{
     text-decoration: none;
@@ -89,7 +90,7 @@ header{
     padding-left: 6rem;
 }
 
-.contenidoAbout, .contenidoContact, .contenidoRules{
+.contenidoAbout, .contenidoContact, .contenidoRules, .contenidoGameInfo{
     width: 80.3vw;
     margin-left: 18vw;
     margin-top: 8rem;
@@ -107,9 +108,29 @@ header{
     margin-left: 18vw;
 }
 
-/* .contenidoRules ol li{
-    list-style: circle;
-} */
+/* ESTILOS TABLA */
+.contenidoGameInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.tab1 > thead tr th{
+    border-bottom: 1px solid black;
+}
+
+.tab1 > tbody tr td{
+    text-align: center;
+}
+
+.tab2 tr{
+    text-align: left;
+}
+.tab2 tr th{
+    padding: 1rem 0;
+}
+/* FIN ESTILOS TABLA */
 
 
 /* CONFIGURO SLIDER IMAGENES */
@@ -131,6 +152,7 @@ ul.slider li{
     width: 100%;
     height: inherit;
     transition: opacity .5s;
+    list-style: none;
 
 }
 .slider img{
