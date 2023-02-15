@@ -3,89 +3,241 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
+body{
+    display: flex; /*Con esto hago que el footer vaya abajo*/
+    flex-direction: column; /*Con esto hago que el footer vaya abajo*/
+    min-height: 150vh; /*Con esto hago que el footer vaya abajo*/
+}
 header{
+    height: 60vh;
     width: 100%;
-    height: 50vh;
-    position: relative;
 }
+main{
+    height: 95vh;
+    width: 100%;
+}
+footer{
+    margin-top: auto; /*Con esto hago que el footer vaya abajo*/
+    height: 5vh;
+    width: 100%;
+    color: #F7DE2E;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO HEADER */
+
 .containerHeader{
-    height: 100%;
+    height: 30%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.banner img{
-    width: 100%;
-    height: 50vh;
-    position: absolute;
-    object-fit: cover;
-    opacity: 0.8;
+.containerLogo{
+    width: 20%;
 }
 .containerLogo img{
-    height: 250px;
-    width: 250px;
-    position: relative;
-    margin-top: 20vh;
-    margin-left: 70%;
+    height: 100%;
+    width: auto;
 }
 
-.containerText .title{
-    position: relative;
-    font-size: 2rem;
-    padding-top: 1rem;
-}
 .menu{
-    width: 15vw;
-    position: relative;
-    margin-top: 4rem;
-    height: 85vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
 }
 
-.menu ul{
-    padding: 2rem 1rem;
-}
 .menu ul li{
-    padding: 2rem 1rem;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #F7DE2E;
+    width: 230px;
     text-align: center;
-    list-style: none;    
 }
+
 .menu ul li a{
     text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    background-color: yellow;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 1rem;
-    display: block;
-    width: 170px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #191c1a;
 }
 
-.menu ul li a::after{
-    background-color: blueviolet;
-}
-.menu ul li a:hover{
+.menu ul li:hover{
     transform: scale(1.2);
+}
+
+.containerBanner{
+    height: 70%;
+    position: relative;
+}
+
+.banner{
+    height: 100%;
+    opacity: 0.5;
+}
+
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.containerText {
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
+}
+
+.title{
+    font-size: 3rem;
+    color: #c02600;
+    text-shadow: 2px 2px 2px black;
+}
+/* FIN ESTILO HEADER */
+
+/* ESTILO HOME */
+.containerMainIndex, .contenido{
+    height: 100%;
 }
 .subtitle{
     background-color: black;
     color: white;
-    height: 4rem;
-    padding: 10px;
+    height: 8%;
+    padding: 0.5rem 0;
 }
+
 .subtitle h2{
     text-align: center;
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.contenedordatos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 92%;
+
+}
 .events{
-    width: 80.3vw;
-    margin-left: 18vw;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 50%;
+    height: 100%;
+}
+.detailEvent{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.detailEvent h3 time{
+   text-decoration: underline;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   background-color: #F7DE2E;
+   padding: 0.5rem;
+}
+.detailEvent p{
+   font-size: 1.5rem;
+}
+.image{
+    width: 50%;
+    height: 100%;
 }
 
+/* CONFIGURO SLIDER IMAGENES */
+.slider-frame{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+}
+.slider{
+    height: 90%;
+}
+.slider ul{
+    width: 800px;
+    height: 300px;
+    position: relative;
+}
+
+ul.slider li{
+    position: absolute;
+    margin-top: 4rem;
+    opacity: 0;
+    list-style: none;
+    width: 838px;
+    height: auto;
+    transition: opacity .5s;
+    list-style: none; 
+}
+.slider img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.slidermenu > li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.slidermenu{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+.slidermenu > li{
+    list-style: none;
+}
+.slidermenu > li a{
+    display: flex;
+    background-color: grey;
+    color: transparent;
+    opacity: 0.7;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+/* FIN DEL SLIDER IMAGENES */
+
+/* FIN ESTILO HOME */
+
+
+/* 
 .contenidoAbout, .contenidoContact, .contenidoRules, .contenidoGameInfo{
     width: 80.3vw;
     margin-left: 18vw;
@@ -131,10 +283,10 @@ header{
     list-style-type: circle;
     padding-left: 1rem;
 
-}
+} */
 
 /* ESTILOS TABLA */
-.contenidoGameInfos{
+.contenidoGameInfo{
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -174,59 +326,4 @@ caption{
 /* FIN ESTILOS TABLA */
 
 
-/* CONFIGURO SLIDER IMAGENES */
-.slidermenu > li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-ul.slider{
-    position: relative;
-    height: 420px;
-    width: auto;
-}
 
-ul.slider li{
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    height: inherit;
-    transition: opacity .5s;
-    list-style: none;
-
-}
-.slider img{
-    width: 100%;
-    height: 420px;
-    background-color: white;
-    object-fit: contain;
-}
-ul.slider li:first-child{
-    opacity: 1;
-}
-
-ul.slider li:target{
-    opacity: 1;
-}
-.slidermenu{
-    text-align: center;
-    margin: 10px; 
-}
-.slidermenu > li{
-    display: inline-block;
-    text-align: center;
-    list-style: none;
-}
-.slidermenu > li a{
-    display: inline-block;
-    background-color: grey;
-    color: transparent;
-    opacity: 0.7;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-}
-/* FIN DEL SLIDER IMAGENES */
