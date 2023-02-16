@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Logo_Mighty_ducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>MDHL WebSite</title>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="containerHeader">
+            <!-- LOGO -->
+            <figure class="containerLogo">
+                <img src="./assets/images/LogoMDHL.png" alt="Logo MDHL" height="200" width="200">
+            </figure>
+
+            <!-- MENU -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About MDHL</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./rules.html">Rules & Policies</a></li>
+                    <li><a href="./game_info.html">Game Information</a></li>
+                    <li><a href="#">Registation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="containerBanner">
+            <!-- BANNER -->
+            <figure class="banner">
+                <img src="./assets/images/design1.jpg" alt="">
+            </figure>
+            
+            <!-- TEXTO -->
+            <div class="containerText">
+                <div class="title">
+                    <h1>Mighty Ducks Hockey League</h1>
+                </div>
+            </div>
+        </div>
+    </header>  
+
+    <!-- CONTENIDO -->
+    <main>
+        <div class="containerMainRegister">
+            <div class="subtitle">
+                <h2>Registration Form</h2>
+            </div>
+            <form action="./show_data.html" method="get">
+                <div class="formElement">
+                    <label for="first_name">Player's First Name</label>
+                    <input type="text" name="First_Name" id="first_name">
+                </div>
+                
+                <div class="formElement">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="Last_Name" id="last_name">
+                </div>
+                
+                <div class="formElement">
+                    <label for="street_address">Street Address</label>
+                    <input type="text" name="Street_Address" id="street_address">
+                </div>
+                
+                <div class="formElement">
+                    <label for="city">City</label>
+                    <input type="text" name="City" id="city">
+                </div>
+                
+                <div class="formElement">
+                    <label for="zip_code">Zip Code</label>
+                    <input type="number" name="Zip_Code" id="zip_code" min-lenght="5" max-lenght="10">
+                </div>
+                
+                <div class="formElement">
+                    <label for="birth_date">Birth Date</label>
+                    <input type="date" name="Birth_Date" id="birth_date">
+                </div>
+                
+                <div class="formElement">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <div>
+                            <label>
+                                <input type="radio" name="Gender" value="Female"> Female
+                            </label>
+                            <label>
+                                <input type="radio" name="Gender" value="Male"> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="Gender" value="Other"> Other
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <div class="formElement">
+                    <fieldset>
+                        <legend>Select Grade</legend>
+                        <div>
+                            <label>
+                                Pre-School
+                                <input type="radio" name="Grade" value="0">
+                            </label>
+                            <label>
+                                1st
+                                <input type="radio" name="Grade" value="1">
+                            </label>
+                            <label>
+                                2nd
+                                <input type="radio" name="Grade" value="2">
+                            </label>
+                            <label>
+                                3rd
+                                <input type="radio" name="Grade" value="3">
+                            </label>
+                            <label>
+                                4th
+                                <input type="radio" name="Grade" value="4">
+                            </label>
+                            <label>
+                                5th
+                                <input type="radio" name="Grade" value="5">
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <div class="formElement">
+                    <label for="school_names">Closest School</label>
+                    <div class="inputs">
+                        <select name="Closest_School" id="school_names">
+                            <option selected value="" disabled>Select School</option>
+                            <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                            <option value="Greenbay">Greenbay</option>
+                            <option value="Howard A Yeager">Howard A Yeager</option>
+                            <option value="Marjorie P Hart">Marjorie P Hart</option>
+                            <option value="North Elementary">North Elementary</option>
+                            <option value="South Elementary">South Elementary</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="formElement">
+                    <fieldset>
+                        <legend>What position(s) do you normally play?</legend>
+                        <div>
+                            <label>
+                                Forward
+                                <input type="checkbox" name="Position" value="Forward">
+                            </label>
+                            <label>
+                                Defense
+                                <input type="checkbox" name="Position" value="Defense">
+                            </label>
+                            <label>
+                                Midfield
+                                <input type="checkbox" name="Position" value="Midfield">
+                            </label>
+                            <label>
+                                Goalkeeper
+                                <input type="checkbox" name="Position" value="Goalkeeper">
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="formElement">
+                    <label for="uniform_size">Uniform Size</label>
+                    <div class="inputs">
+                        <select name="Uniform_Size" id="uniform_size">
+                            <option selected value="" disabled>Select Size</option>
+                            <option value="Youth Small">Youth Small</option>
+                            <option value="Youth Medium">Youth Medium</option>
+                            <option value="Youth Large">Youth Large</option>
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="Extra-Large">Extra-Large</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <section class="Terms">
+                    <h4>Permission to Play</h4>
+                    <a href="#openModal">Open and Read the Permission to Play</a>
+
+                    <div id="openModal" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <label for="terms">I Accept</label>
+                    </div>
+                </section>
+
+                <div class="formElement">
+                    <label for="parent_guardian">Parent/Guardian</label>
+                    <input type="text" name="Parent_Guardian" id="parent_guardian">
+                </div>
+
+                <button class="btnRegister" type="submit">Register</button>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- CIERRE -->
+    <footer>
+        <span> MDHL - Diseñado y Desarrollado por Gimena Di Stefano Nicolina &copy;</span>
+    </footer>
+</body>
+</html>
