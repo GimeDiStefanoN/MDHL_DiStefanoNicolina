@@ -236,8 +236,8 @@ ul.slider li:target{
 /* FIN DEL SLIDER IMAGENES */
 /* FIN ESTILO HOME */
 
-/* ESTILO ABOUT */
 
+/* ESTILO ABOUT */
 .containerMainAbout, .containerMainContact{
     display: flex;
     flex-direction: column;
@@ -275,14 +275,14 @@ ul.slider li:target{
     padding: 0 2rem;
 }
 .textDetail h3{
-   font-size: 1.4rem;
-   text-transform: uppercase;
-   text-decoration: underline;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .textDetail p{
-   font-size: 1.2rem;
-   text-align: justify;
-   line-height: 2.2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2.2rem;
 }
 /* FIN ESTILO ABOUT */
 
@@ -308,30 +308,21 @@ ul.slider li:target{
 }
 /* FIN ESTILO CONTACTO */
 
-/* 
-.contenidoAbout, .contenidoContact, .contenidoRules, .contenidoGameInfo{
-    width: 80.3vw;
-    margin-left: 18vw;
-    margin-top: 8rem;
-    margin-bottom: 4rem;
-    padding-left: 6rem;
-}
 
-.detailEvent, .detailInfo, .contenidoContact>p{
-    margin: 2.5rem 0;
+/*  ESTILO RULES */
+.containerMainRules{
+    display: flex;
+    flex-direction: column;
 }
-.image{
-    text-align: center;
-    padding: 1rem;
-    width: 80.3vw;
-    margin-left: 18vw;
-}
-
 .contenidoRules{
     display: flex;
     flex-direction: column;
+    margin-left: 20rem;
     gap: 2rem;
     font-size: 1rem;
+    width: 800px;
+    background-color: rgb(211, 209, 209);
+    padding: 3rem 2em;
 }
 
 .rule1 li{
@@ -353,8 +344,37 @@ ul.slider li:target{
 .rule3{
     list-style-type: circle;
     padding-left: 1rem;
+}
 
-} */
+.imageRules{
+    width: 800px;
+}
+.imageRules img{
+    width: 100%;
+    margin-left: 20rem;
+}
+/* FIN ESTILO RULES */
+
+/* 
+.contenidoAbout, .contenidoContact, .contenidoRules, .contenidoGameInfo{
+    width: 80.3vw;
+    margin-left: 18vw;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding-left: 6rem;
+}
+
+.detailEvent, .detailInfo, .contenidoContact>p{
+    margin: 2.5rem 0;
+}
+.image{
+    text-align: center;
+    padding: 1rem;
+    width: 80.3vw;
+    margin-left: 18vw;
+}
+
+ */
 
 /* ESTILOS TABLA */
 .contenidoGameInfo{
