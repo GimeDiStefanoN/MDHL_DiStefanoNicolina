@@ -355,39 +355,25 @@ ul.slider li:target{
 }
 /* FIN ESTILO RULES */
 
-/* 
-.contenidoAbout, .contenidoContact, .contenidoRules, .contenidoGameInfo{
-    width: 80.3vw;
-    margin-left: 18vw;
-    margin-top: 8rem;
-    margin-bottom: 4rem;
-    padding-left: 6rem;
-}
 
-.detailEvent, .detailInfo, .contenidoContact>p{
-    margin: 2.5rem 0;
-}
-.image{
-    text-align: center;
-    padding: 1rem;
-    width: 80.3vw;
-    margin-left: 18vw;
-}
-
- */
+/*  ESTILO GAMES */
 
 /* ESTILOS TABLA */
 .contenidoGameInfo{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 3rem;
+    width: 90%;
+    margin-left: 5rem;
 }
 
 .tab1 .text1{
     font-size: 1.5rem;
 }
 .tab1 .text2{
-text-align: left;
+    text-align: left;
+    padding-left: 1REM;
 }
 
 caption{
@@ -404,7 +390,6 @@ caption{
 .tab1 thead> tr:nth-child(odd), .tab1 tbody> tr:nth-child(odd){
     background-color: rgb(228, 221, 221);
 }
-
 .tab1, .tab2{
     width: 100%;
 }
@@ -415,6 +400,42 @@ caption{
     padding: 1rem 0;
 }
 /* FIN ESTILOS TABLA */
+.imageGameInfo{
+    width: 90%;
+    margin-left: 5rem;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+.imageGameInfo img{
+    width: 100%;
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+.column img:hover{
+    margin-top: 5px;
+    transform: scale(2);
+}
+
+
+/* @media (max-width:800px){
+    .column{
+        flex: 50%;
+    }
+}
+@media (max-width:600px){
+    .column{
+        flex: 100%;
+    }
+} */
+/* FIN ESTILO GAMES */
 
 
 
