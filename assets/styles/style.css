@@ -140,7 +140,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 .detailEvent{
@@ -160,9 +160,10 @@ footer{
 }
 .detailEvent p{
    font-size: 1.5rem;
+   padding: 0 4rem;
 }
 .image{
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
@@ -237,7 +238,7 @@ ul.slider li:target{
 
 /* ESTILO ABOUT */
 
-.containerMainAbout{
+.containerMainAbout, .containerMainContact{
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -284,6 +285,28 @@ ul.slider li:target{
    line-height: 2.2rem;
 }
 /* FIN ESTILO ABOUT */
+
+/* ESTILO CONTACTO */
+.contenidoContact{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    margin: 20rem 0;
+}
+.contenidoContact p{
+    font-size: 2rem;
+    padding: 1REM;
+}
+.imageContact img{
+    object-fit: cover;
+    width: 100%;
+}
+/* FIN ESTILO CONTACTO */
 
 /* 
 .contenidoAbout, .contenidoContact, .contenidoRules, .contenidoGameInfo{
