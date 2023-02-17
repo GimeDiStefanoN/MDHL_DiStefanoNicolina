@@ -25,7 +25,7 @@
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./rules.html">Rules & Policies</a></li>
                     <li><a href="./game_info.html">Game Information</a></li>
-                    <li><a href="#">Registation</a></li>
+                    <li><a href="#">Registration</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,12 +53,12 @@
             <form action="./show_data.html" method="get">
                 <div class="formElement">
                     <label for="first_name">Player's First Name</label>
-                    <input type="text" name="First_Name" id="first_name">
+                    <input type="text" name="First_Name" id="first_name" required>
                 </div>
                 
                 <div class="formElement">
                     <label for="last_name">Last Name</label>
-                    <input type="text" name="Last_Name" id="last_name">
+                    <input type="text" name="Last_Name" id="last_name" required>
                 </div>
                 
                 <div class="formElement">
@@ -78,7 +78,7 @@
                 
                 <div class="formElement">
                     <label for="birth_date">Birth Date</label>
-                    <input type="date" name="Birth_Date" id="birth_date">
+                    <input type="date" name="Birth_Date" id="birth_date" required>
                 </div>
                 
                 <div class="formElement">
@@ -193,6 +193,8 @@
                     <div id="openModal" class="modalDialog">
                         <div>
                             <a href="#close" title="Close" class="close">X</a>
+                            <h2>Permission to Play</h2>
+
                             <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
                             </p>
                         </div>
@@ -205,9 +207,13 @@
 
                 <div class="formElement">
                     <label for="parent_guardian">Parent/Guardian</label>
-                    <input type="text" name="Parent_Guardian" id="parent_guardian">
+                    <input type="text" name="Parent_Guardian" id="parent_guardian" required placeholder="First and Last Name">
                 </div>
-
+                
+                <div class="formElement">
+                    <label for="register_date">Registration Date</label>
+                    <input type="date" name="Registration" id="register_date" required>
+                </div>
                 <button class="btnRegister" type="submit">Register</button>
 
             </form>

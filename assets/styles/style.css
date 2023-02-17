@@ -389,6 +389,10 @@ caption{
 
 .tab1 > tbody tr td{
     text-align: center;
+    font-size: 1.4rem;
+}
+.tab1 > tbody tr td img{
+    height: 1.1rem;
 }
 
 .tab1 thead> tr:nth-child(odd), .tab1 tbody> tr:nth-child(odd){
@@ -466,14 +470,14 @@ form{
 }
 .formElement > fieldset{
     width: 100%;
-    height: 3rem;
+    height: 4rem;
 }
-.formElement > fieldset > legend{
-    padding-bottom: 0.5rem;
-}
+
 .formElement > fieldset > div{
     display: flex;
     justify-content: space-around;
+    padding: 1rem 0;
+
 }
 
 .btnRegister{
@@ -518,7 +522,8 @@ form{
 	pointer-events: auto;
 }
 .modalDialog > div {
-	width: 400px;
+    height: 420px;
+	width: 450px;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
@@ -527,9 +532,13 @@ form{
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
-  -webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+.modalDialog > div h2{
+    padding-bottom: 1.5rem;
+    text-align: center;
 }
 .close {
 	background: #606061;
