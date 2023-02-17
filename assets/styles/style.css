@@ -452,6 +452,9 @@ caption{
     transform: scale(2);
 }
 
+iframe{
+    max-width: 100%;
+}
 
 /* @media (max-width:800px){
     .column{
@@ -548,6 +551,9 @@ form{
 	width: 450px;
 	position: relative;
 	margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
@@ -684,6 +690,10 @@ form{
         display: flex;
         justify-content: space-between;
     }
+    .modalDialog > div {
+        width: 350px;
+        height: 550px;
+    }
     .Terms{
         align-items: center;
 }
@@ -703,6 +713,6 @@ form{
     }
    
     footer>span{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
