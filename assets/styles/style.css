@@ -29,7 +29,9 @@ footer{
     align-items: center;
     text-align: center;
 }
-
+img{
+    max-width: 100%;
+}
 /* ESTILO HEADER */
 
 .containerHeader{
@@ -143,6 +145,7 @@ footer{
     color: white;
     height: 8%;
     padding: 0.5rem 0;
+    width: 100%;
 }
 
 .subtitle h2{
@@ -337,11 +340,14 @@ ul.slider li:target{
 .containerMainRules{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .contenidoRules{
     display: flex;
     flex-direction: column;
-    margin-left: 20rem;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     font-size: 1rem;
     width: 800px;
@@ -373,10 +379,7 @@ ul.slider li:target{
 .imageRules{
     width: 800px;
 }
-.imageRules img{
-    width: 100%;
-    margin-left: 20rem;
-}
+
 /* FIN ESTILO RULES */
 
 
@@ -648,7 +651,12 @@ form{
 
 .title{
     font-size: 2rem;
+    text-align: center;
 }
+.contenidoRules, .imageRules{
+    width: 600px;
+}
+
 }
  @media (max-width: 768px){    
     
@@ -662,6 +670,9 @@ form{
         font-size: 1.5rem;
     }
    
+    .contenidoRules, .imageRules{
+        width: 500px;
+    }
 
     form{
         background-color: #d3d0d0;
@@ -708,8 +719,9 @@ form{
         object-fit: contain;
         width: 100%;
     }
-
-
+    .contenidoRules, .imageRules{
+        width: 400px;
+    }
     form{
         width: 375px;
     }
@@ -744,6 +756,10 @@ form{
     }
     .menu ul{
         width: 100%;
+    }
+
+    .contenidoRules, .imageRules{
+        width: 350px;
     }
     .modalDialog > div {
         width: 300px;
