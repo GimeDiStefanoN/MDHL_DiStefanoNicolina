@@ -85,6 +85,18 @@ footer{
     transform: scale(1.2);
 }
 
+.responsiveBtn{
+    height: 100%;
+    width: 150px;
+    border: 1px solid black;
+    display: none;
+
+}
+.responsiveBtn img{
+    height: 100%;
+    width: 150px;
+    background-color: black;
+}
 .containerBanner{
     height: 70%;
     position: relative;
@@ -562,4 +574,18 @@ form{
 /* FIN ESTILO REGISTRATION */
 
 
+/* MEDIA QUERIES */
 
+@media screen and (max-width: 960px){
+    .containerHeader{
+        justify-content: space-between;
+    }
+    
+    
+}
+
+@media (max-width: 650px) {
+}
+
+@media (max-width: 425px) {
+}
