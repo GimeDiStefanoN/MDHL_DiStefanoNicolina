@@ -14,3 +14,5 @@ Las tecnologias utilizadas para el mismo fueron:
 2. CSS
 ___
 ## PREVISUALIZACION
+
+![Preview_MDHL](https://user-images.githubusercontent.com/97200944/219900081-08140d73-ccc3-4a6c-aa8e-198336113484.png)
