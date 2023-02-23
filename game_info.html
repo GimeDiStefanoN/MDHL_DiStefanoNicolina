@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>MDHL WebSite</title>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="containerHeader">
+            <!-- LOGO -->
+            <figure class="containerLogo">
+                <img src="./assets/images/logo_mdhl.png" alt="Logo MDHL" height="200" width="200">
+            </figure>
+
+            <!-- MENU -->
+            <nav class="menu">
+                <!-- ICONO MENU -->
+                <div id="toggle-menu" class="toggle-menu">
+                    <label for="toggle-menu-checkbox">
+                        <img src="./assets/icons/responsiveMenu_Icon.svg" alt="">
+                    </label>
+                </div>
+                <input type="checkbox" name="toggle-menu-checkbox" id="toggle-menu-checkbox" class="toggle-menu__checkbox">
+
+                <ul class="main-menu" id="main-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About MDHL</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./rules.html">Rules & Policies</a></li>
+                    <li><a href="#">Game Information</a></li>
+                    <li><a href="./registration.html">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="containerBanner">
+            <!-- BANNER -->
+            <figure class="banner">
+                <img src="./assets/images/design1.jpg" alt="">
+            </figure>
+            
+            <!-- TEXTO -->
+            <div class="containerText">
+                <div class="title">
+                    <h1>Mighty Ducks Hockey League</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main>
+        <section class="containerMainGameInfo">
+            <div class="subtitle">
+                <h2>Game Information</h2>
+            </div>
+
+            <div class="contenidoGameInfo">
+                
+                <table class="tab1">
+                    <caption>
+                        <p class="text1">Fall Schedule</p>
+                        <p class="text2">* All games take place on Saturday</p>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>SEPTEMBER</th>
+                            <th>Teams</th>
+                            <th>Location</th>
+                            <th>Times</th>
+                            <th>Maps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="date">9/01</td>
+                            <td>U1 and U4</td>
+                            <td>AJ Katzenmaier</td>
+                            <td>9:30 a.m.</td>
+                            <td><a href="#openMap1">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td>U3 and U2</td>
+                            <td>Greenbay</td>
+                            <td>1:00 p.m.</td>
+                            <td><a href="#openMap2">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2" class="date">9/08</td>
+                            <td>U5 and U6</td>
+                            <td>Howard A Yeager</td>
+                            <td>9:30 a.m.</td>
+                            <td><a href="#openMap3">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>U6 and U1</td>
+                            <td>Marjorie P Hart</td>
+                            <td>1:00 p.m.</td>
+                            <td><a href="#openMap4">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2" class="date">9/15</td>
+                            <td>U2 and U4</td>
+                            <td>North</td>
+                            <td>9:30 a.m.</td>
+                            <td><a href="#openMap5">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td>U3 and U5</td>
+                            <td>AJ Katzenmaier</td>
+                            <td>1:00 p.m.</td>
+                            <td><a href="#openMap1">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2" class="date">9/22</td>
+                            <td>U1 and U3</td>
+                            <td>South</td>
+                            <td>9:30 a.m.</td>
+                            <td><a href="#openMap6">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>U2 and U6</td>
+                            <td>Howard A Yeager</td>
+                            <td>1:00 p.m.</td>
+                            <td><a href="#openMap2">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="date">9/29</td>
+                            <td>U4 and U5</td>
+                            <td>Greenbay</td>
+                            <td>9:30 a.m.</td>
+                            <td><a href="#openMap1">Ver en el mapa <img src="./assets/icons/LocationIcon.svg" alt=""></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="tab2">
+                    <tr>
+                        <th>Facility Type:</th>
+                        <td colspan="3">Outdoor</td>
+                    </tr>
+
+                    <tr>
+                        <th>Additional Information:</th>
+                        <td colspan="3">If deemed necessary by MDHL games may be shortened or cancelled due extreme weather conditions.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Please direct all questions to:</th>
+                        <td colspan="3">Michael Randall, League Coordinator</td>
+                    </tr>
+                    
+                    <tr class="contact-game">
+                        <th>Phone:</th>
+                        <td> <a href="tel:+6306908132">(630) 690-8132</a></td>
+                        <th>Email:</th>
+                        <td> <a href="mailto:michael.randall@chihockey.org">michael.randall@chihockey.org</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="containerMaps">
+                <div id="openMap1" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>AJ Katzenmaier Academy</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1532166.6400163858!2d-88.1738361!3d41.4063821!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1sen!2sar!4v1676595228214!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div id="openMap2" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Greenbay</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d91064.52877092795!2d-88.1951522!3d44.4994506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802fa54437d3b65%3A0xf63728c8a91e81ef!2sGreen%20Bay%20Gamblers%20Hockey!5e0!3m2!1sen!2sar!4v1676602441115!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+                <div id="openMap3" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Howard A Yeager</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11801.080246623287!2d-87.8538811!3d42.3154383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1676602475752!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+                <div id="openMap4" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Marjorie P Hart</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2898383819593!2d-87.6459727!3d41.9296229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2637f9d7%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1sen!2sar!4v1676602521461!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+                <div id="openMap5" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>North</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d189620.38634699644!2d-87.9264981!3d42.0470714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc6e58cafb32b%3A0xb352c3a8231a21dc!2sNorth%20Shore%20Ice%20Arena!5e0!3m2!1sen!2sar!4v1676602559920!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+                <div id="openMap6" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>South</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190428.2888466331!2d-87.7804084!3d41.7756868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e24c3caa4dc99%3A0xc2d4aebd2c577cff!2sMorgan%20Park%20Sports%20Center!5e0!3m2!1sen!2sar!4v1676602592896!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+            </div>
+            
+
+            <figure class="imageGameInfo">
+                <div class="column">
+                    <img src="./assets/images/hockey9.jpg" alt="">
+                    <img src="./assets/images/hockey8.jpg" alt="">
+                    <img src="./assets/images/hockey7.jpg" alt="">
+                </div>                
+                <div class="column">
+                    <img src="./assets/images/hockey4.jpg" alt="">
+                    <img src="./assets/images/hockey5.jpg" alt="">
+                    <img src="./assets/images/hockey6.jpg" alt="">
+                </div>                
+                <div class="column">
+                    <img src="./assets/images/hockey3.jpg" alt="">
+                    <img src="./assets/images/hockey10.jpg" alt="">
+                    <img src="./assets/images/hockey1.jpg" alt="">
+                </div>                
+                <div class="column">
+                    <img src="./assets/images/design2.jpg" alt="">
+                    <img src="./assets/images/hockey2.jpg" alt="">
+                    <img src="./assets/images/design1.jpg" alt="">
+                </div>                
+            </figure>
+        </section>
+    </main>
+
+    <!-- CIERRE -->
+    <footer>
+        <span> MDHL - Diseñado y Desarrollado por Gimena Di Stefano Nicolina &copy;</span>
+    </footer>
+</body>
+</html>

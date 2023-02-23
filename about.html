@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/Logo_Mighty_ducks-01.png" type="image/x-icon">
-
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>MDHL WebSite</title>
 </head>
 <body>
@@ -14,60 +14,92 @@
         <div class="containerHeader">
             <!-- LOGO -->
             <figure class="containerLogo">
-                <img src="./assets/Logo_Mighty_ducks-01.png" alt="Logo MDHL" height="200" width="200">
+                <img src="./assets/images/logo_mdhl.png" alt="Logo MDHL" height="200" width="200">
             </figure>
+
+            <!-- MENU -->
+            <nav class="menu">
+                <!-- ICONO MENU -->
+                <div id="toggle-menu" class="toggle-menu">
+                    <label for="toggle-menu-checkbox">
+                        <img src="./assets/icons/responsiveMenu_Icon.svg" alt="">
+                    </label>
+                </div>
+                <input type="checkbox" name="toggle-menu-checkbox" id="toggle-menu-checkbox" class="toggle-menu__checkbox">
+
+                <ul class="main-menu" id="main-menu">                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About MDHL</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./rules.html">Rules & Policies</a></li>
+                    <li><a href="./game_info.html">Game Information</a></li>
+                    <li><a href="./registration.html">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="containerBanner">
+            <!-- BANNER -->
+            <figure class="banner">
+                <img src="./assets/images/design1.jpg" alt="">
+            </figure>
+            
             <!-- TEXTO -->
             <div class="containerText">
-                <!-- TITULO -->
                 <div class="title">
                     <h1>Mighty Ducks Hockey League</h1>
                 </div>
-                <!-- MENU -->
-                <nav class="menu">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About MDHL</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </header>
 
     <!-- CONTENIDO -->
     <main>
-        <div class="containerMainAbout">
-            <figure class="image">
-                <img src="./assets/hockey_2.jpg" alt="">
-            </figure>
+        <section class="containerMainAbout">
+            <div class="subtitle">
+                <h2>About MDHL</h2>
+            </div>
 
-            <div class="contenido">
-                    <article class="detailInfo">
+            <div class="contenidoAbout">
+                <article class="detailInfo">
+                    <img src="./assets/images/hockey9.jpg" alt="">
+
+                    <div class="textDetail">
                         <h3>Mision</h3>
                         <p>To support young athletes living Chicago's northside neighborhood, who have an interest in 
-                            learning and playing soccer, with opportunities to learn and practice skills related to the game of 
-                            hockey, specifically those skills around team cooperation and good sportsmanship</p>
-                    </article>
-                    <article class="detailInfo">
+                        learning and playing soccer, with opportunities to learn and practice skills related to the game of 
+                        hockey, specifically those skills around team cooperation and good sportsmanship</p>
+                    </div>
+                </article>
+
+                <article class="detailInfo">
+                    <img src="./assets/images/hockey4.jpg" alt="">
+
+                    <div class="textDetail">
                         <h3>Vision</h3>
                         <p>The Mighty Ducks Hockey League aspires to develop strong, well-rounded and mindful athletes 
-                            through the building of character, self-discipline, and leadership.</p>
-                    </article>
-                    <article class="detailInfo">
+                        through the building of character, self-discipline, and leadership.</p>
+                    </div>
+                </article>
+                
+                <article class="detailInfo">
+                    <img src="./assets/images/hockey6.jpg" alt="">
+
+                    <div class="textDetail">
                         <h3>General Information</h3>
                         <p>The Mighty Ducks Soccer League was established in 1996 to provide athletes residing 
-                            Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a 
-                            member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside 
-                            neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time of 
-                            parents and previous league members</p>
-                    </article>
-                </div>
-        </div>
+                        Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a 
+                        member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside 
+                        neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time of 
+                        parents and previous league members</p>
+                    </div>                        
+                </article>
+                
+            </div>
+        </section>
     </main>
 
     <!-- CIERRE -->
     <footer>
-
+        <span> MDHL - Diseñado y Desarrollado por Gimena Di Stefano Nicolina &copy;</span>
     </footer>
 </body>
 </html>
