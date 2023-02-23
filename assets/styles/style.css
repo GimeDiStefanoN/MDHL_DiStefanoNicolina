@@ -8,7 +8,7 @@
 body{
     display: flex; /*Con esto hago que el footer vaya abajo*/
     flex-direction: column; /*Con esto hago que el footer vaya abajo*/
-    min-height: 150vh; /*Con esto hago que el footer vaya abajo*/
+    min-height: 100vh; /*Con esto hago que el footer vaya abajo*/
 }
 header{
     height: 60vh;
