@@ -1,6 +1,9 @@
 ___
 <h1 align="center">  WebSite Mighty Ducks Hockey League</h1>
 
+<p align="center">
+   <img src="https://img.shields.io/badge/STATUS-FINALIZADO-orange">
+</p>
 
 ##	:white_check_mark: DESCRIPCION
 
